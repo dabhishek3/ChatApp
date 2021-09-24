@@ -15,7 +15,7 @@ namespace ChatApp.Hubs
 
         public override Task OnConnectedAsync()
         {
-            Clients.All.SendAsync("ReceiveMessage", "system", $"{Context.ConnectionId} joined the conversation");
+            //Clients.All.SendAsync("ReceiveMessage", "system", $"{Context.User} joined the conversation");
             return base.OnConnectedAsync();
         }
     }
