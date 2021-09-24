@@ -13,6 +13,10 @@ namespace ChatApp.Hubs
             await Clients.All.SendAsync("ReceiveMessage", userId, message);
         }
 
-       
+        public override Task OnConnectedAsync()
+        {
+           // Clients.All.SendAsync("ReceiveMessage", "system", $"{Context.ConnectionId} joined the conversation");
+            return base.OnConnectedAsync();
+        }
     }
 }
