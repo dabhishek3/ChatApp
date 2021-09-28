@@ -8,11 +8,26 @@ namespace ChatApp.Hubs
 {
     public class ChatHub:Hub
     {
-        public async Task SendMessage(string userId, string message)
+        //public async Task SendMessage(string userId, string message)
+        //{
+        //    await Clients.All.SendAsync("ReceiveMessage", userId, message);
+        //}
+
+
+        public async Task JoinChat(string user)
         {
-            await Clients.All.SendAsync("ReceiveMessage", userId, message);
+            await Clients.All.SendAsync("JoinChat", user);
         }
 
+        public async Task LeaveChat(string user)
+        {
+            await Clients.All.SendAsync("LeaveChat", user);
+        }
+
+        public async Task SendMessage(string user, string message)
+        {
+            await Clients.All.SendAsync("ReceiveMessage", user, message);
+        }
         //public override Task OnConnectedAsync()
         //{
         //    Clients.All.SendAsync("ReceiveMessage", "system", $"{Context.ConnectionId} joined the conversation");
