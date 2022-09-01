@@ -29,10 +29,10 @@ namespace ChatApp.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
-        public async Task SendAudioMessage(string user, byte[] audio, string audioPath)
+        public async Task SendAudioMessage(string user, string message, byte[] audio, string audioPath)
         {
 
-            await Clients.All.SendAsync("ReceiveAudioMessage", user, audio, audioPath);
+            await Clients.All.SendAsync("ReceiveAudioMessage", user, message, audio, audioPath);
         }
         //public override Task OnConnectedAsync()
         //{
