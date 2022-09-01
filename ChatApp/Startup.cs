@@ -27,7 +27,9 @@ namespace ChatApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSignalR();
+            services.AddSignalR(e => {
+                e.MaximumReceiveMessageSize = 102400000;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
