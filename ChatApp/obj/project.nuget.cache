@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5hgOlpZcebDG1Ik5aF52/Eom6cQLt3qw6vDPwv/WywIkLApRHHmdr1gxU/8eoSqS9oHQOHbEqLXm/BYPpCzhjw==",
+  "dgSpecHash": "oTqQz7u5gEBL6kBThX1uX/S8GVVU1Eb1G7DUS6okCyjNV59q0/1D0xrW5+KVCCitXwVbjsO7c4kz2RfJqebnAw==",
   "success": true,
-  "projectFilePath": "F:\\RestAPICrud\\ChatApp\\ChatApp\\ChatApp.csproj",
+  "projectFilePath": "D:\\SignalR\\ChatApp\\ChatApp\\ChatApp\\ChatApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Me\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Me\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\5.0.10\\microsoft.aspnetcore.connections.abstractions.5.0.10.nupkg.sha512",

@@ -16,6 +16,7 @@ namespace ChatApp.Hubs
 
         public async Task JoinChat(string user)
         {
+           //await Clients.Group.SendMessage("", user);
             await Clients.All.SendAsync("JoinChat", user);
         }
 
@@ -24,9 +25,17 @@ namespace ChatApp.Hubs
             await Clients.All.SendAsync("LeaveChat", user);
         }
 
-        public async Task SendMessage(string user, string message)
+        public async Task SendMessage(string user, string message, byte[] audio)
         {
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            if(message==null && audio!=null)
+            {
+                await Clients.All.SendAsync("ReceiveMessage", user, audio);
+            }
+            else
+            {
+                await Clients.All.SendAsync("ReceiveMessage", user, message);
+            }
+            //await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
         //public override Task OnConnectedAsync()
         //{

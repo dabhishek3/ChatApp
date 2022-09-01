@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\RestAPICrud\\ChatApp\\ChatApp\\ChatApp.csproj": {}
+    "D:\\SignalR\\ChatApp\\ChatApp\\ChatApp\\ChatApp.csproj": {}
   },
   "projects": {
-    "F:\\RestAPICrud\\ChatApp\\ChatApp\\ChatApp.csproj": {
+    "D:\\SignalR\\ChatApp\\ChatApp\\ChatApp\\ChatApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\RestAPICrud\\ChatApp\\ChatApp\\ChatApp.csproj",
+        "projectUniqueName": "D:\\SignalR\\ChatApp\\ChatApp\\ChatApp\\ChatApp.csproj",
         "projectName": "ChatApp",
-        "projectPath": "F:\\RestAPICrud\\ChatApp\\ChatApp\\ChatApp.csproj",
+        "projectPath": "D:\\SignalR\\ChatApp\\ChatApp\\ChatApp\\ChatApp.csproj",
         "packagesPath": "C:\\Users\\Me\\.nuget\\packages\\",
-        "outputPath": "F:\\RestAPICrud\\ChatApp\\ChatApp\\obj\\",
+        "outputPath": "D:\\SignalR\\ChatApp\\ChatApp\\ChatApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
