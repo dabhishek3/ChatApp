@@ -47,7 +47,7 @@ namespace ChatApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                //endpoints.MapHub<ChatHub>("ChatHub");
+                endpoints.MapHub<AudioHub>("/AudioHub");
                 endpoints.MapHub<ChatHub>("/ChatHub");
             });
             //app.UseSignalR(routes => { routes.MapHub<ChatHub>("/ChatHub"); });
