@@ -34,6 +34,7 @@ namespace ChatApp.Hubs
 
             await Clients.All.SendAsync("ReceiveAudioMessage", user, message, audio, audioPath);
         }
+
         //public override Task OnConnectedAsync()
         //{
         //    Clients.All.SendAsync("ReceiveMessage", "system", $"{Context.ConnectionId} joined the conversation");
